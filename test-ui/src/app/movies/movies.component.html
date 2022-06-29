@@ -1,0 +1,37 @@
+<div class="alignCenter">
+
+    <h2>Movies Today</h2>
+    <table id="movie" *ngFor="let movie of movies">
+        <tr>
+            <th colspan="2">{{movie.title}}</th>
+        </tr>
+        <tr>
+            <td>Director</td>
+            <td>{{movie.director}}</td>
+        </tr>
+        <tr>
+            <td>Producer</td>
+            <td>{{movie.producer}}</td>
+        </tr>
+        <tr>
+            <td>Story Line</td>
+            <td>{{movie.storyLine}}</td>
+        </tr>
+        <tr>
+            <td>Writer</td>
+            <td>{{movie.writer}}</td>
+        </tr>
+        <tr>
+            <td>Cast</td>
+            <td>
+                <ul>
+                    <li *ngFor="let actor of movie.actors">{{actor.name}}</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>Rating</td>
+            <td>{{getRating(movie.ratings)}}</td>
+        </tr>
+    </table>
+</div>

@@ -1,0 +1,34 @@
+
+  .alignCenter{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+  }
+
+  ul {
+      list-style: none;
+  }
+
+
+
+  #movie {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  #movie td, #movie th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #movie tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #movie th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4169E1	;
+    color: white;
+  }
